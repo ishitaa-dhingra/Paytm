@@ -1,2 +1,3 @@
-const JWT_SECRET = "ishitaasecret";
-module.exports = JWT_SECRET;
+// backend/config.js
+const JWT_SECRET = process.env.JWT_SECRET || "default_secret";
+module.exports = { JWT_SECRET };

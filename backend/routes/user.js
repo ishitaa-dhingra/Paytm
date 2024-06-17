@@ -3,6 +3,7 @@ const express = require("express");
 const router = express.Router();
 const zod = require("zod");
 const { User } = require("../db");
+const { Account } = require("../db.js");
 const jwt = require("jsonwebtoken");
 const { JWT_SECRET } = require("../config.js");
 const { authMiddleware } = require("../middleware.js");
